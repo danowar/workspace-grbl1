@@ -1310,7 +1310,7 @@ cpdefine("inline:com-chilipeppr-workspace-diode_laser", ["chilipeppr_ready"], fu
 
                             //spc.init(true, /^ok|^\n|^\[G|^<^$G/);
                             //spc.init(true, /^ok|^\n|^\[G|^</);
-                            spc.init(true, /^ok/);
+                            spc.init(true, /^ok|/);
                             
                             // resize this console on a browser resize
                             $(window).on('resize', function(evt) {
