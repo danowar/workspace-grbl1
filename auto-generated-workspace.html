@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <title>Workspace / grbl</title>
+    <title>Workspace / diode_laser</title>
 
     <!-- ChiliPeppr is based on bootstrap CSS. -->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -173,7 +173,7 @@ body.hover {
     <script type='text/javascript'>
     //<![CDATA[
 /* global cpdefine chilipeppr cprequire $ cprequire_test */
-cprequire_test(["inline:com-chilipeppr-workspace-grbl"], function(ws) {
+cprequire_test(["inline:com-chilipeppr-workspace-diode_laser"], function(ws) {
 
     console.log("initting workspace");
 
@@ -201,7 +201,7 @@ cprequire_test(["inline:com-chilipeppr-workspace-grbl"], function(ws) {
     ws.init();
 
     // Do some niceties for testing like margins on widget and title for browser
-    $('title').html("grbl Workspace");
+    $('title').html("diode_laser Workspace");
     $('body').css('padding', '10px');
 
 } /*end_test*/ );
@@ -220,14 +220,14 @@ Function.prototype.clone = function() {
 };
 
 // This is the main definition of your widget. Give it a unique name.
-cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function() {
+cpdefine("inline:com-chilipeppr-workspace-diode_laser", ["chilipeppr_ready"], function() {
     return {
         /**
          * The ID of the widget. You must define this and make it unique.
          */
-        id: "com-chilipeppr-workspace-grbl", // Make the id the same as the cpdefine id
-        name: "Workspace / grbl", // The descriptive name of your widget.
-        desc: `A ChiliPeppr Workspace grbl.`,
+        id: "com-chilipeppr-workspace-diode_laser", // Make the id the same as the cpdefine id
+        name: "Workspace / diode_laser", // The descriptive name of your widget.
+        desc: `A ChiliPeppr Workspace for inexpensive diode laser machines.`,
         url: "http://raw.githubusercontent.com/danowar/workspace_diode_laser/master/auto-generated-workspace.html", // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
         fiddleurl: "http://ide.c9.io/danowar/workspace-diode_laser", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
         githuburl: "http://github.com/danowar/workspace_diode_laser", // The backing github repo
@@ -1611,7 +1611,7 @@ cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function(
                     <div id="com-chilipeppr-3dviewer">Load 3D Viewport Here</div>
                     <!-- Workspace Hdr -->
                     <div id="com-chilipeppr-ws-gcode-hdr" class="com-chilipeppr-ws-hdr zhigh well">
-                        GRBL Workspace
+                        diode_laser Workspace
                         <div id="com-chilipeppr-ws-gcode-menu" class="">
 
 
